@@ -1,0 +1,307 @@
+:root {
+  --fontclr: #303030;
+  --bgclr: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bgclr);
+  color: var(--fontclr);
+  min-height: 2000px;
+}
+
+/* Navbar 1 */
+
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
+  position: static;
+  top: 25px;
+  left: 0;
+  right: 0;
+}
+
+.navbar1 .navbar-left a {
+  font-size: 0.7rem;
+  color: #303030;
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+
+.navbar1 .navbar-logo a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #303030;
+  font-style: italic;
+}
+
+.navbar1 .navbar-right a {
+  font-size: 0.7rem;
+  color: #303030;
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+
+.navbar2 {
+  display: none;
+  /* justify-content: center;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
+  position: static;
+  top: 25px;
+  left: 0;
+  right: 0; */
+}
+
+/* .navbar2 .navbar-center a {
+  font-size: 0.8rem;
+  color: #303030;
+  display: inline-block;
+  margin: 0 1.4rem;
+} */
+
+.ext-navbar {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
+  position: static;
+  top: 105px;
+  left: 0;
+  right: 0;
+}
+
+.ext-navbar-center a {
+  font-size: 0.8rem;
+  color: #303030;
+  display: inline-block;
+  margin: 0 1.4rem;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+  background-color: #303030;
+  position: static;
+  top: 0px;
+  left: 0;
+  right: 0;
+}
+
+.top-navbar-nav a {
+  font-size: 0.65rem;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0rem;
+}
+
+/* Section Hero */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../assets/bgd2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .content {
+  margin-top: 4rem;
+  padding: 1.4rem 7% ;
+  max-width: 45rem;
+}
+
+.hero .content h1 {
+  font-size: 4em ;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+  line-height: 0.95;
+}
+
+.hero .content h1 span {
+  font-style: italic;
+}
+
+.hero .content p {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  color: #303030;
+  background-color: #ffffff;
+  box-shadow: 0.5px 0.5px 0.5px rgba(48, 48, 48, 0.502);
+}
+
+/* Section NA */
+
+.nar {
+  padding: 5rem 1.4rem;
+}
+
+.nar .txt {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nar .txt h3 {
+  font-size: 1.5rem;
+}
+
+.nar .txt a {
+  font-size: 0.7rem;
+}
+
+.nar .container {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.nar .card {
+  width: 300px;
+  background: #f2f2f2;
+}
+
+.nar .card .image-box {
+  text-align: center;
+  height: 300px;
+  column-gap: 12px;
+  padding: 15px;
+}
+
+.nar .card .image-box img {
+  height: 100%;
+}
+
+.nar .card .name-price {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color: #303030;
+}
+
+
+
+/* Media Queries */
+
+/* Laptop */
+/* @media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+} */
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  #search-txt {
+    display: none;
+  }
+
+  #support-txt {
+    display: none;
+  }
+
+  #nav-user-txt {
+    display: none;
+  }
+
+  #heart-txt {
+    display: none;
+  }
+
+  #shopping-cart-txt {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .ext-navbar {
+    display: none;
+  }
+
+  .navbar2 {
+    display: flex;
+  }
+
+  .navbar2 .navbar-center {
+    position: fixed;
+    top: -7%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 20rem;
+    height: 100vh;
+    margin-top: 50px;
+    transition: 0.3s;
+  }
+
+  .navbar2 .navbar-center.active {
+    right: 0;
+    box-shadow: 0 0 0 10000px rgba(0,0,0,.50);
+  }
+
+
+  .navbar2 .navbar-center a {
+    color: #303030;
+    display: block;
+    margin: 1rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+  }
+
+  .top-navbar {
+    padding: 5px;
+  }
+
+  /* Hero */
+
+  .hero {
+    background-position-x: -16rem;
+  }
+
+
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+
+
