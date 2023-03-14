@@ -183,11 +183,16 @@ body {
 
 .nar .container {
   width: 100%;
-  background-color: #f2f2f2;
+  padding: 0px 0;
+}
+
+.nar .slide-container {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
 .nar .card {
-  width: 300px;
   background: #f2f2f2;
 }
 
@@ -198,17 +203,130 @@ body {
   padding: 15px;
 }
 
-.nar .card .image-box img {
+.nar .card .image-box a img {
   height: 100%;
+  min-width: 80%;
+}
+
+.nar .card .image-box .overlay-1 {
+  height: 100%;
+  transition: all 0.5s linear;
+}
+
+.nar .card .image-box .overlay-1:hover {
+  content: url(../assets/sb2.jpg);
+}
+
+.nar .card .image-box .overlay-2 {
+  height: 100%;
+  transition: all 0.5s linear;
+}
+
+.nar .card .image-box .overlay-2:hover {
+  content: url(../assets/hb2.jpg);
+}
+
+.nar .card .image-box .overlay-3 {
+  height: 100%;
+  transition: all 0.5s linear;
+}
+
+.nar .card .image-box .overlay-3:hover {
+  content: url(../assets/wt2.jpg);
+}
+
+.nar .card .image-box .overlay-4 {
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.nar .card .image-box .overlay-4:hover {
+  content: url(../assets/gb2.jpg);
+}
+
+.nar .card .image-box .overlay-5 {
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.nar .card .image-box .overlay-5:hover {
+  content: url(../assets/sp2.png);
 }
 
 .nar .card .name-price {
   text-align: center;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 0.8rem;
   color: #303030;
 }
 
+.nar .swiper-navBtn {
+  color: #b4b4b4;
+  transition: color 0.3s ease;
+}
+
+.nar .swiper-navBtn:hover {
+  color: #303030;
+}
+
+.nar .swiper-navBtn::before,
+.nar .swiper-navBtn::after {
+  font-size: 40px;  
+}
+
+.nar .swiper-button-next {
+  right: 0;
+}
+
+.nar .swiper-button-prev {
+  left: 0;
+}
+
+/* Section Clothes Brands */
+
+.scb {
+  padding: 1.4rem 7%;
+}
+
+.scb .txt {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.scb .txt h3 {
+  font-size: 1.5rem;
+}
+
+.scb .txt a {
+  font-size: 0.7rem;
+}
+
+.scb .row {
+  display: flex;
+  width: 100%;
+  padding: 0px 0;
+}
+
+.scb .image-box {
+  flex: 1 1 45rem;
+  text-align: center;
+  width: auto;
+  height: 30rem;
+  padding: 15px;
+}
+
+.scb .image-box a img {
+  height: 100%;
+}
+
+.scb .image-box .cta {
+  display: inline-block;
+  left: -100;
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  color: #303030;
+  background-color: #ffffff;
+  box-shadow: 0.5px 0.5px 0.5px rgba(48, 48, 48, 0.502);
+}
 
 
 /* Media Queries */
@@ -270,10 +388,10 @@ body {
   }
 
   .navbar2 .navbar-center.active {
+    z-index: 1001;
     right: 0;
     box-shadow: 0 0 0 10000px rgba(0,0,0,.50);
   }
-
 
   .navbar2 .navbar-center a {
     color: #303030;
@@ -287,12 +405,21 @@ body {
     padding: 5px;
   }
 
-  /* Hero */
+  /* Section Hero */
 
   .hero {
     background-position-x: -16rem;
   }
 
+  /* Section NA */
+
+  .nar .swiper-navBtn {
+    display: none;
+  }
+
+  .nar .slide-container {
+    margin: 0 10px;
+  }
 
 }
 

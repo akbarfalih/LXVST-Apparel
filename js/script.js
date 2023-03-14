@@ -15,13 +15,15 @@ document.addEventListener('click', function(e){
     }
 });
 
+
 // Swiper JS
 var swiper = new Swiper('.slide-container', {
     slidesPerView: 4,
-    spaceBetween: 30,
-    slidesPerGroup: 4,
+    spaceBetween: 25,
     loop: true,
-    loopFillGroupWithBlank: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -29,6 +31,21 @@ var swiper = new Swiper('.slide-container', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints:{
+      450: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1080: {
+        slidesPerView: 3,
+      },
+      1366: {
+        slidesPerView: 4,
+      },
     },
   });
 
