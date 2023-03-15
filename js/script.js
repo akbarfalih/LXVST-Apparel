@@ -16,7 +16,7 @@ document.addEventListener('click', function(e){
 });
 
 
-// Swiper JS
+// Section NA Swiper JS
 var swiper = new Swiper('.slide-container', {
     slidesPerView: 4,
     spaceBetween: 25,
@@ -34,7 +34,7 @@ var swiper = new Swiper('.slide-container', {
     },
 
     breakpoints:{
-      450: {
+      0: {
         slidesPerView: 1,
       },
       768: {
@@ -48,5 +48,7 @@ var swiper = new Swiper('.slide-container', {
       },
     },
   });
+
+
 
 
