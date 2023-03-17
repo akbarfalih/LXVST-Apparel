@@ -340,16 +340,58 @@ body {
   transform: translate(-100%, -100%);
 }
 
+.scb .scb-row-flickity {
+  display: none;
+}
+
 
 
 /* Media Queries */
 
 /* Laptop */
-/* @media (max-width: 1366px) {
+@media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 85%;
   }
-} */
+  
+  /* Section Hero */
+
+  .hero {
+    background-position-x: 0rem;
+  }
+
+  /* Section Clothes Brand */
+
+  .scb .scb-row {
+    display: none;
+  }
+
+  .scb .scb-row-flickity {
+    display: inline;
+  }
+
+  .scb .image-scb {
+    width: 50%;
+    height: 500px;
+    margin-right: 10px;
+  }
+  
+  .scb .image-scb:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+  }
+  
+  .flickity-prev-next-button {
+    display: none;
+  }
+
+  .scb .image-scb .cta {
+    left: 50%;
+  }
+
+}
 
 /* Tablet */
 @media (max-width: 768px) {
@@ -439,6 +481,16 @@ body {
   }
 
   /* Section Clothes Brand */
+
+
+  .scb .image-scb {
+    width: 100%;
+  }
+
+  .scb .image-scb .cta {
+    left: 35%;
+  }
+  
 
 }
 
