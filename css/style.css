@@ -12,11 +12,15 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bgclr);
   color: var(--fontclr);
-  min-height: 5000px;
+  /* min-height: 5000px; */
 }
 
 /* Navbar 1 */
@@ -118,6 +122,30 @@ body {
   margin: 0rem;
 }
 
+/* Back to Top */
+.to-top {
+  display: flex;
+  position: fixed;
+  bottom: 30px;
+  right: 16px;
+  font-size: 18px;
+  border-radius: 50%;
+  align-items: center;
+  background-color: #303030;
+  color: white;
+  pointer-events: none;
+  padding: 15px;
+  transition: all .4s;
+  z-index: 100;
+  opacity: 0;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
 /* Section Hero */
 .hero {
   min-height: 90vh;
@@ -197,6 +225,7 @@ body {
 }
 
 .nar .card .image-box {
+  position: relative;
   text-align: center;
   height: 300px;
   column-gap: 12px;
@@ -265,6 +294,7 @@ body {
 
 .nar .swiper-navBtn:hover {
   color: #303030;
+  
 }
 
 .nar .swiper-navBtn::before,
@@ -343,6 +373,12 @@ body {
   transform: translate(-100%, -100%);
 }
 
+.scb .image-scb .cta:hover {
+  background-color: #303030;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
 .scb .scb-row-flickity {
   display: none;
 }
@@ -357,7 +393,6 @@ body {
   display: flex;
   margin-top: 2rem;
   background-color: #ededed;
-  
 }
 
 .contact .row .map {
@@ -368,7 +403,7 @@ body {
 
 .contact .row form {
   flex: 1 1 45rem;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
 }
 
@@ -376,14 +411,14 @@ body {
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  background-color: #eee;
+  background-color: #ededed;
   border: 1px solid #303030;
   padding-left: 2rem;
 }
 
 .contact .row form .input-group input {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.3rem;
   font-size: 1.2rem;
   background: none;
 }
@@ -396,6 +431,42 @@ body {
   color: #fff;
   background-color: #303030;
   cursor: pointer;
+}
+
+.contact .row form .btn:hover {
+  background-color: #686868;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+
+/* Footer */
+footer {
+  background-color: #303030;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+footer .social {
+  padding: 0.5rem 0;
+}
+
+footer .social a {
+   color: #fff;
+   margin: 1rem;
+}
+
+footer .credit p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+footer .credit a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 

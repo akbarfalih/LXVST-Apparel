@@ -1,4 +1,4 @@
-// Toggle class active
+// Toggle sidebar class active
 const navbarCenter = document.querySelector('.navbar-center');
 // Klik Hamburger toggle sidebar
 document.querySelector('#hamburger-menu').onclick = () => {
@@ -13,6 +13,17 @@ document.addEventListener('click', function(e){
     if(!hamburger.contains(e.target) && !navbarCenter.contains(e.target)) {
         navbarCenter.classList.remove('active');
     }
+});
+
+// To the top
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
 });
 
 
